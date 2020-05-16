@@ -28,6 +28,8 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 3%;
+  margin: 0px;
+  padding: 0px;
 }
 span {
   color: var(--title-text-color);
@@ -39,11 +41,40 @@ a {
   text-decoration: none;
 }
 
-}
 .header-main {
   color: var(--primary-bcg-color);
 }
 
+.container {
+  display: inline-block;
+  margin-right: 185px;
+  margin-left: 185px;
+  margin-bottom: 94px;
+  width: 1230px;
+}
+.container-2 {
+  display: inline-block;
+  margin-bottom: 94px;
+  margin-right: 185px;
+  margin-left: 185px;
+  width: 1230px;
+}
+.container-work {
+  display: inline-block;
+  margin-bottom: 94px;
+  margin-right: 185px;
+  margin-left: 185px;
+  padding-top: 94px;
+  padding-bottom: 50px;
+  width: 1230px;
+}
+.container-clients{
+  display: inline-block;
+  margin-right: 185px;
+  margin-left: 185px;
+  width: 1230px;
+}
+}
 /* навигация */
 .nav-logo {
   font-family: Raleway, sans-serif;
@@ -52,6 +83,10 @@ a {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+}
+.list {
+  margin: 0;
+  padding: 0;
 }
 .nav-link {
   color: var(--title-text-color);
@@ -84,8 +119,13 @@ a {
 .contact-link:focus {
   color: var(--logo-text-color);
 }
+.section-hero {
+  text-align: center;
+}
 /* Герой поменять цвет заголовка */
 .hero-title {
+  margin-bottom: 46px;
+
   color: var(--primary-bcg-color);
 
   font-weight: 900;
@@ -96,6 +136,12 @@ a {
 }
 /* кнопка */
 .button-main {
+  margin-bottom: 94px;
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 4px;
+  min-width: 136px;
+
   font-family: Roboto, sans-serif;
   background-color: var(--logo-text-color);
   color: var(--primary-bcg-color);
@@ -111,48 +157,65 @@ a {
 /* предложение */
 
 .section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
   color: var(--title-text-color);
 
   font-size: 36px;
   line-height: 1.31;
   text-align: center;
 }
+.images {
+  margin-bottom: 30px;
+}
 .section-caption {
-  color: var(--title-text-color);
+  margin-top: 0;
+  margin-bottom: 10px;
 
+  color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
 }
+.text-list {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
 .section-text {
+  margin-top: 0;
+  margin-bottom: 0;
+
   background-color: var(--bgc-section);
   color: var(--primary-bcg-color);
-<<<<<<< HEAD
-=======
-  
-font-weight: 700;
-font-size: 14px;
-line-height: 1.14;
-text-transform: uppercase;
->>>>>>> 42b9d4a17d6ccda79050a58f7ba3286c9db3bda0
-
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
+.section-title .team {
+  margin-top: 0;
+  margin-bottom: 0px;
+}
 /* наша команда */
 .section-featchers {
+  margin-top: 0;
+  margin-bottom: 0;
   background-color: var(--section-bgc-color);
 }
 .section-workers {
+  margin-top: 0;
+  margin-bottom: 10px;
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
 }
 .section-lead {
+  margin-top: 0;
+  margin-bottom: 16px;
+
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.19;
@@ -166,11 +229,15 @@ text-transform: uppercase;
 /* css второй страници */
 
 .navi-button {
+  /* padding: 6px 22px;
+  border-radius: 4px; */
+
   color: var(--title-text-color);
   font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
+  text-align: center;
 }
 
 .navi-button:hover,
