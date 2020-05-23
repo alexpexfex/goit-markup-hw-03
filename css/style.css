@@ -56,6 +56,7 @@ div {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+
   outline: solid tomato;
 }
 /* header navigation */
@@ -183,16 +184,19 @@ div {
 }
 
 /* предложение */
-.section {
+/* .section {
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: darkolivegreen;
+} */
+.section-offers {
+  padding-bottom: 94px;
 }
 .section-title {
   display: block;
   padding: 0;
+  padding-bottom: 94px;
   margin: 0;
-
   color: var(--title-text-color);
   font-size: 36px;
   line-height: 1.31;
@@ -202,6 +206,7 @@ div {
 .section-container {
   display: flex;
   justify-content: center;
+  border-bottom: 1px solid #ececec;
 }
 
 .image {
@@ -229,10 +234,14 @@ div {
 .text-caption {
   display: block;
   padding: 0;
+  padding-bottom: 94px;
   margin: 0;
 }
 
 /* What we do */
+.section-design {
+  padding-bottom: 94px;
+}
 .section-work {
   display: block;
   padding: 0;
@@ -247,6 +256,7 @@ div {
 .container-team {
   display: flex;
   justify-content: center;
+  padding-bottom: 94px;
 }
 
 .team-staff:not(:last-child) {
@@ -255,7 +265,7 @@ div {
 
 .section-text {
   display: block;
-  padding: 0;
+  padding: 27px 85px;
   margin: 0;
 
   /* border-radius: 0px 0px 4px 4px; */
@@ -267,8 +277,12 @@ div {
   line-height: 1.14;
   text-transform: uppercase;
   text-align: center;
+  background-color: yellow;
 }
 /* наша команда */
+.section-people {
+  padding-bottom: 94px;
+}
 .section-team {
   text-align: center;
   padding: 0;
@@ -279,20 +293,20 @@ div {
   font-size: 36px;
   line-height: 1.31;
 }
-.section-featchers {
+.container-featchers {
   display: flex;
   align-items: center;
-  background-color: var(--section-bgc-color);
+  padding-bottom: 94px;
+
+  background-color: teal;
 }
-.best-team {
-  margin-bottom: 30px;
-}
-.best-team:not(:last-child) {
+
+.featchers-team:not(:last-child) {
   margin-right: 30px;
 }
 
-.featchers-team {
-  display: block;
+.best-team {
+  margin-bottom: 30px;
 }
 
 .section-workers {
@@ -332,6 +346,7 @@ div {
   display: flex;
   justify-content: center;
   padding: 0;
+  padding-bottom: 94px;
   margin: 0;
 }
 .clients-title {
