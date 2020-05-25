@@ -8,10 +8,11 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link
+    <link rel="normalize.css" href="./css/normalize.css" />
+    <!-- <link
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
       rel="stylesheet"
-    />
+    /> -->
 
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -20,46 +21,44 @@
     <header class="header-main">
       <!-- <div class="container"> -->
       <div class="container">
-      <div class="container-nav">
-        <nav class="nav-main">
-          <a href="./" class="nav-logo"> Web <span>Studio</span> </a>
-          <!-- навигация -->
-          <ul class="site-nav">
+        <div class="container-nav">
+          <nav class="nav-main">
+            <a href="./" class="nav-logo"> Web <span>Studio</span> </a>
+            <!-- навигация -->
+            <ul class="site-nav">
+              <li class="item">
+                <a href="./index.html" class="nav-link active">Студия</a>
+              </li>
+              <li class="item">
+                <a href="portfolio.html" class="nav-link">Портфолио</a>
+              </li>
+              <li class="item"><a href="" class="nav-link">Контакты</a></li>
+            </ul>
+          </nav>
+          <ul class="site-link">
             <li class="item">
-              <a href="./index.html" class="nav-link active">Студия</a>
+              <a href="mailto:info@devstudio.com" class="contact-link"
+                >info@devstudio.com</a
+              >
             </li>
             <li class="item">
-              <a href="portfolio.html" class="nav-link">Портфолио</a>
+              <a href="tel:+380961111111" class="contact-link">
+                +38 096 111 11 11</a
+              >
             </li>
-            <li class="item"><a href="" class="nav-link">Контакты</a></li>
           </ul>
-        </nav>
-        <ul class="site-link">
-          <li class="item">
-            <a href="mailto:info@devstudio.com" class="contact-link"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="item">
-            <a href="tel:+380961111111" class="contact-link">
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
         </div>
       </div>
     </header>
     <main>
       <!-- герой -->
       <section class="section-hero">
-        <div class="container">
-          <h1 class="hero-title">
-            ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br />
-            ДЛЯ ВАШЕГО БИЗНЕСА
-          </h1>
-          <button type="button" class="button-main">Заказать услугу</button>
-          <!--ето кнопка-->
-        </div>
+        <h1 class="hero-title">
+          ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br />
+          ДЛЯ ВАШЕГО БИЗНЕСА
+        </h1>
+        <button type="button" class="button-main">Заказать услугу</button>
+        <!--ето кнопка-->
       </section>
       <!-- предложения -->
       <section class="section-offers">
@@ -147,23 +146,23 @@
                 width="270"
               />
               <h3 class="section-workers">John Smith</h3>
-              <p class="section-lead">Product Designer</p> 
+              <p class="section-lead">Product Designer</p>
               <ul class="social-links">
-                <li>
+                <li class="links-item">
                   <a href="" aria-label="Instagram.com"></a>
                 </li>
-                <li>
+                <li class="links-item">
                   <a href="" aria-label="Twiter.com"></a>
                 </li>
-                <li>
+                <li class="links-item">
                   <a href="" aria-label="Facebook.com"></a>
                 </li>
-                <li>
+                <li class="links-item">
                   <a href="" aria-label="Linkedin.com"></a>
                 </li>
               </ul>
             </li>
-        
+
             <li class="featchers-team">
               <img
                 class="best-team"
@@ -174,21 +173,24 @@
               <h3 class="section-workers">Marta Stewart</h3>
               <p class="section-lead">Frontend Developer</p>
               <ul class="social-links">
-                <li>
-                  <a href="" aria-label="Instagram.com" class="workers-link"></a>
+                <li class="links-item">
+                  <a
+                    href=""
+                    aria-label="Instagram.com"
+                    class="workers-link"
+                  ></a>
                 </li>
-                <li>
+                <li class="links-item">
                   <a href="" aria-label="Twiter.com" class="workers-link"></a>
                 </li>
-                <li>
+                <li class="links-item">
                   <a href="" aria-label="Facebook.com" class="workers-link"></a>
                 </li>
-                <li>
+                <li class="links-item">
                   <a href="" aria-label="Linkedin.com" class="workers-link"></a>
                 </li>
               </ul>
             </li>
-            
 
             <li class="featchers-team">
               <img
@@ -200,21 +202,24 @@
               <h3 class="section-workers">Robert Jakis</h3>
               <p class="section-lead">Marketing</p>
               <ul class="social-links">
-                <li>
-                  <a href="" aria-label="Instagram.com" class="workers-link"></a>
+                <li class="links-item">
+                  <a
+                    href=""
+                    aria-label="Instagram.com"
+                    class="workers-link"
+                  ></a>
                 </li>
-                <li>
+                <li class="links-item">
                   <a href="" aria-label="Twiter.com" class="workers-link"></a>
                 </li>
-                <li>
+                <li class="links-item">
                   <a href="" aria-label="Facebook.com" class="workers-link"></a>
                 </li>
-                <li>
+                <li class="links-item">
                   <a href="" aria-label="Linkedin.com" class="workers-link"></a>
                 </li>
               </ul>
             </li>
-            
 
             <li class="featchers-team">
               <img
@@ -226,21 +231,24 @@
               <h3 class="section-workers">Martin Doe</h3>
               <p class="section-lead">UI Designer</p>
               <ul class="social-links">
-                <li>
-                  <a href="" aria-label="Instagram.com" class="workers-link"></a>
+                <li class="links-item">
+                  <a
+                    href=""
+                    aria-label="Instagram.com"
+                    class="workers-link"
+                  ></a>
                 </li>
-                <li>
+                <li class="links-item">
                   <a href="" aria-label="Twiter.com" class="workers-link"></a>
                 </li>
-                <li>
+                <li class="links-item">
                   <a href="" aria-label="Facebook.com" class="workers-link"></a>
                 </li>
-                <li>
+                <li class="links-item">
                   <a href="" aria-label="Linkedin.com" class="workers-link"></a>
                 </li>
               </ul>
             </li>
-            
           </ul>
         </div>
       </section>
@@ -250,108 +258,92 @@
           <h2 class="section-clients">Постоянные клиенты</h2>
 
           <ul class="container-customers">
-            <li class="image-clients"
->
+            <li class="image-clients">
               <a href="#">
-                <img
-                  
-                  src="./image/logo1.svg"
-                  alt="Логотип компании"
+                <img src="./image/logo1.svg" alt="Логотип компании"
               /></a>
             </li>
             <li class="image-clients">
               <a href="#">
-                <img
-                  
-                  src="./image/logo2.svg"
-                  alt="Логотип компании"
-              /></a>
-            </li>
-            <li class="image-clients"> 
-              <a href="#">
-                <img
-                  
-                  src="./image/logo3.svg"
-                  alt="Логотип компании"
-              /></a>
-            </li class="image-clients">
-            <li>
-              <a href="#">
-                <img
-                  
-                  src="./image/logo4.svg"
-                  alt="Логотип компании"
+                <img src="./image/logo2.svg" alt="Логотип компании"
               /></a>
             </li>
             <li class="image-clients">
               <a href="#">
-                <img
-                  
-                  src="./image/logo5.svg"
-                  alt="Логотип компании"
+                <img src="./image/logo3.svg" alt="Логотип компании"
               /></a>
             </li>
-            <li class="image-clients" >
+            <li class="image-clients">
               <a href="#">
-                <img
-                  
-                  src="./image/logo6.svg"
-                  alt="Логотип компании"
+                <img src="./image/logo4.svg" alt="Логотип компании"
+              /></a>
+            </li>
+            <li class="image-clients">
+              <a href="#">
+                <img src="./image/logo5.svg" alt="Логотип компании"
+              /></a>
+            </li>
+            <li class="image-clients">
+              <a href="#">
+                <img src="./image/logo6.svg" alt="Логотип компании"
               /></a>
             </li>
           </ul>
         </div>
       </section>
     </main>
-  <footer class="footer">
-    <div class="container">
-      <div class="container-footer">
-        <div class="adress">
-          <address>
-            <ul>
-              <li class="logo">
-                <a class="footer-logo" href="./">Web <span>Studio</span> </a>
+    <footer class="footer">
+      <div class="container">
+        <div class="container-footer">
+          <div class="adress">
+            <address>
+              <ul>
+                <li class="logo">
+                  <a class="footer-logo" href="./">Web <span>Studio</span> </a>
+                </li>
+
+                <li class="footer-address">
+                  г. Киев, пр-т Леси Украинки, 27
+                </li>
+
+                <li class="contact-mail">
+                  <a href="mailto:info@devstudio.com" class="footer-contact"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="contact-tel">
+                  <a href="tel:+380961111111" class="footer-contact">
+                    +38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <div class="container-join">
+            <h2 class="footer-title">присоединяйтесь</h2>
+            <ul class="footer-links">
+              <li class="footer-link">
+                <a href="" aria-label="Instagram.com"></a>
               </li>
-  
-              <li class="footer-address">
-                г. Киев, пр-т Леси Украинки, 27
+              <li class="footer-link">
+                <a href="" aria-label="Twiter.com"></a>
               </li>
-  
-              <li class="contact-mail">
-                <a href="mailto:info@devstudio.com" class="footer-contact">info@devstudio.com</a>
+              <li class="footer-link">
+                <a href="" aria-label="Facebook.com"></a>
               </li>
-              <li class="contact-tel">
-                <a href="tel:+380961111111" class="footer-contact">
-                  +38 096 111 11 11</a>
+              <li class="footer-link">
+                <a href="" aria-label="Linkedin.com"></a>
               </li>
             </ul>
-          </address>
+          </div>
+          <div class="link-button">
+            <b class="link-text">Подпишитесь на рассылку</b>
+            <button class="footer-button" type="button">Подписаться</button>
+          </div>
         </div>
-  
-        <div class="container-join">
-          <h2 class="footer-title">присоединяйтесь</h2>
-          <ul>
-            <li>
-              <a href="" aria-label="Instagram.com"></a>
-            </li>
-            <li>
-              <a href="" aria-label="Twiter.com"></a>
-            </li>
-            <li>
-              <a href="" aria-label="Facebook.com"></a>
-            </li>
-            <li>
-              <a href="" aria-label="Linkedin.com"></a>
-            </li>
-          </ul>
-        </div>
-        <div class="link-button">
-          <b class="link-text">Подпишитесь на рассылку</b>
-          <button class="footer-button" type="button">Подписаться</button>
-        </div>
+        <p class="footer-developed">2020 | Developed by GoIT Students</p>
       </div>
-      <p class="footer-developed">2020 | Developed by GoIT Students</p>
-    </div>
-  </footer>
+    </footer>
   </body>
 </html>
